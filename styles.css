@@ -1,0 +1,150 @@
+html{
+  margin: 0;
+  padding: 0; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.container{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div{
+  width: 50%;
+}
+img{
+  max-width: 90%;
+}
+.text *{
+  margin: 45px 0;
+}
+h1{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+.text p{
+
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+}
+
+input{
+  font-size: 10px;
+  width: 216px;
+  height: 68px;
+  background: #333333;
+
+  color: white;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+
+  cursor: pointer;
+}
+input:hover{
+  background: rgb(180, 180, 180);
+  box-shadow: aqua 1px 1px 2px;
+  color: rgb(0, 0, 0);
+}
+
+.scarecrow p{
+  position: absolute;
+  left: 77px;
+  top: 40px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+  transform: rotate(-5deg);
+}
+
+img{
+  left: 11.73%;
+  right: 11.78%;
+  top: 11.49%;
+  bottom: 63.44%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+.author{
+  position: fixed;
+  bottom: 0%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #BDBDBD;
+}
+@media(max-width: 767px){
+  body{
+    height: 100vh;
+  }
+  .container{
+    padding: 5px;
+  }
+  @media(max-width: 600px){
+    .container{
+      flex-direction: column;
+    }
+    .container div{
+      width: 95%;
+    }
+    .scarecrow p{
+      width: 133px;
+      height: 25px;
+      left: 24px;
+      top: 20px;
+    }
+    img{
+      margin-top: 100px;
+      max-width: 100%;
+    }
+    h1{
+      font-size: 48px;
+      line-height: 71px;
+      letter-spacing: -0.035em;
+    }
+    .text{
+      text-align: center;
+    }
+    .text p{
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: -0.035em;
+    }
+    .author{
+      position: relative;
+    }
+  }
+}
